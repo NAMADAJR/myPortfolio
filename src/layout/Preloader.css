@@ -1,0 +1,70 @@
+@keyframes waveIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes waveOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+.wave-animation {
+    animation: waveIn 2s ease-in-out, waveOut 3s ease-in-out 6s forwards;
+}
+
+/* Fade-out effect for the preloader screen */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Preloader fade-out effect */
+.preloader-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 4s ease-in-out forwards; /* Fades out over 2 seconds */
+}
+
+/* Fade-in effect for page content */
+.fade-in-content {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; /* Fades in content */
+}
+
+/* Fade-in animation for page content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
