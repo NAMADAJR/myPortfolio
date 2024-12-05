@@ -11,16 +11,18 @@ const App = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 4000); 
+        const timer = setTimeout(() => setLoading(false), 3700); // Preloader delay
         return () => clearTimeout(timer);
     }, []);
 
     return (
         <Router>
             {loading ? (
-                <Preloader />
+                <div className="preloader-wrapper">
+                    <Preloader />
+                </div>
             ) : (
-                <div className="transition-opacity duration-500 opacity-100">
+                <div className="fade-in-content">
                     <Navbar />
                     <div id="home" className="min-h-screen bg-jet-black">
                         <Home />
@@ -41,3 +43,4 @@ const App = () => {
 };
 
 export default App;
+
