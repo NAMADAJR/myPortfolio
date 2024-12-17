@@ -1,26 +1,28 @@
 import React from "react";
-import Slider from "react-slick"; // Importing react-slick
-import "slick-carousel/slick/slick.css"; // Importing slick carousel CSS
-import "slick-carousel/slick/slick-theme.css"; // Importing slick carousel theme CSS
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SkillsCarousel = () => {
-  const skills = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB"];
+  const skills = ["HTML", "CSS", "JavaScript", "Git and Github", "React", "Tailwind CSS", "Vercel", "Python", "Flask", "SQL", "Render"];
 
   const settings = {
-    dots: true, // Show navigation dots
-    infinite: true, // Infinite scrolling
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Number of slides visible
-    slidesToScroll: 1, // Number of slides to scroll at a time
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,  
+    autoplaySpeed: 1000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768, // For smaller screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // For very small screens
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
@@ -30,14 +32,16 @@ const SkillsCarousel = () => {
 
   return (
     <div className="p-8">
-      <h2 className="text-center text-2xl font-bold mb-6 text-rust-brown">Skills & Interests</h2>
+      <h2 className="text-center text-3xl md:text-4xl font-bold mb-8 text-rust-brown">
+        Skills & Technologies
+      </h2>
       <Slider {...settings}>
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex justify-center items-center p-4 shadow-md rounded-lg bg-gray-800 text-white h-28"
+            className="flex justify-center items-center shadow-lg rounded-lg bg-jet-black h-10 hover:scale-105 transition-transform duration-300"
           >
-            <span className="text-xl font-semibold">{skill}</span>
+            <span className="flex justify-center text-xl font-semibold text-rust-brown ">{skill}</span>
           </div>
         ))}
       </Slider>
