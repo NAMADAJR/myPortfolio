@@ -1,29 +1,23 @@
 import React from "react";
-import Typwriter from "../components/Typwriter";
-import Profilepic from "../components/Profilepic";
-import MyName from "../components/MyName"; 
+import MyName from "../components/MyName";
+import ProfilePic from "../components/Profilepic";
+import Typewriter from "../components/Typewriter";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center p-5 m-8">
-      <div className="p-10 text-center">
-        {/* Animated Name */}
+    <div className="flex flex-col lg:flex-row justify-center bg-black h-screen items-center md:p-10 lg:p-[90px]">
+      {/* Left Section */}
+      <div className="flex flex-col justify-center items-center text-center lg:w-1/2">
         <MyName />
-
-        {/* Typwriter Text */}
-        <Typwriter />
+        <Typewriter />
       </div>
 
-      {/* Profile Picture */}
-      <div className="m-10">
-        <Profilepic />
+      {/* Right Section */}
+      <div className="lg:w-1/2 flex justify-center">
+        <ProfilePic />
       </div>
     </div>
   );
 };
 
 export default Home;
-
-
-
-
