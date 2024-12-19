@@ -6,12 +6,14 @@ const MyName = () => {
   const shortName = " Namada Junior.";
 
   return (
-    <div className="flex justify-center space-x-1 p-5 whitespace-nowrap">
-      <span className="text-4xl font-bold text-rust-brown">{introText}</span>
+    <div className="flex flex-wrap justify-center space-x-1 p-5">
+      <span className="text-xl md:text-2xl lg:text-4xl font-bold text-rust-brown">
+        {introText}
+      </span>
       {shortName.split("").map((letter, index) => (
         <motion.span
           key={index}
-          className="inline-block text-3xl font-bold text-rust-brown" 
+          className="inline-block text-xl md:text-2xl lg:text-3xl font-bold text-rust-brown"
           initial={{ scale: 1 }}
           animate={{
             scale: [1, 1.5, 1],

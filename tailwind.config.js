@@ -12,9 +12,16 @@ export default {
         "charcoal-gray": "#353634", // Charcoal Gray
         "jet-black": "#1A1A19",     // Jet Black
       },
+      screens: {
+        sm: "640px",
+        md: "768px", 
+        lg: "1024px",
+        xl: "1280px",
+      },
     },
   },
   plugins: [],
-}
+};
+
 
 

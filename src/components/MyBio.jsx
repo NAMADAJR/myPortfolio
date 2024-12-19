@@ -1,4 +1,3 @@
-// src/components/MyBio.jsx
 import React from "react";
 
 const MyBio = () => {
