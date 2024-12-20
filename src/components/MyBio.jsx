@@ -30,7 +30,7 @@ const MyBio = () => {
           <p className="p-1 text-center">Started learning HTML/CSS in June, 2024</p>
           <p className="p-1 text-center">Built my first website in July, 2024</p>
           <p className="p-1 text-center">Started working with React and Tailwind CSS in August, 2024</p>
-          <p className="p-1 text-center">Learned Python and Flask in , 2024</p>
+          <p className="p-1 text-center">Learned Python and Flask in September, 2024</p>
           <p className="p-1 text-center">Developed several personal and group projects</p>
         
       </div>
