@@ -5,7 +5,7 @@ import Typewriter from "../components/Typewriter";
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center bg-black h-screen items-center md:p-10 lg:p-[90px]">
+    <div className="flex flex-col lg:flex-row justify-center bg-black min-h-screen items-center md:p-10 lg:p-[90px]">
       {/* Left Section */}
       <div className="flex flex-col justify-center items-center text-center lg:w-1/2">
         <MyName />
