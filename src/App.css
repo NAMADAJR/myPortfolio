@@ -1,0 +1,20 @@
+/* Animated Gradient Background */
+.gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #0d0d0d, #2d1b0d, #4e342e, #1c1c1c);
+
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -2; /* Ensures it stays behind content */
+}
+
+/* Smooth gradient transition */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

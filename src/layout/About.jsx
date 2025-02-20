@@ -4,7 +4,7 @@ import SkillsCarousel from "../components/SkillsCarousel";
 
 const About = () => {
   return (
-    <div className="text-white bg-black min-h-screen md:p-10 lg:p-[90px]">
+    <div className="text-white min-h-screen md:p-10 lg:p-[90px]">
       <h1 className="flex justify-center text-3xl md:text-4xl lg:text-5xl font-bold text-rust-brown mb-5">
         About Me
       </h1>
