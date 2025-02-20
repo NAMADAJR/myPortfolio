@@ -5,7 +5,7 @@ import ContactDetails from "../components/ContactDetails";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center p-6">
+    <div className="min-h-screen md:p-10 lg:p-[90px] text-white flex flex-col items-center p-6">
       {/* Heading */}
       <h1 className="text-3xl md:text-5xl font-bold text-rust-brown mb-8">
         Contact Me
