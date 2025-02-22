@@ -12,7 +12,7 @@ const App = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 4000);
+        const timer = setTimeout(() => setLoading(false), 6000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -20,7 +20,7 @@ const App = () => {
         <Router>
             {loading ? (
                 <div className="preloader-wrapper">
-                    <Preloader />
+                    <Preloader onComplete={() => setLoading(false)} />
                 </div>
             ) : (
                 <div className="fade-in-content">

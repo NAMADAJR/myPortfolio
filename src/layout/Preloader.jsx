@@ -12,12 +12,12 @@ const Preloader = ({ onComplete }) => {
     tl.fromTo(
       "#welcome-path",
       { strokeDasharray: 500, strokeDashoffset: 500 },
-      { strokeDashoffset: 0, duration: 3, ease: "power2.out" }
+      { strokeDashoffset: 0, duration: 5, ease: "power2.out" }
     ).to(preloaderRef.current, {
       opacity: 0,
       duration: 0.5,
       pointerEvents: "none",
-      onComplete: () => onComplete(),
+      onComplete: () => onComplete?.(),
     });
 
     return () => {
@@ -31,7 +31,8 @@ const Preloader = ({ onComplete }) => {
       className="bg-black fixed inset-0 flex items-center justify-center z-50 preloader transition-opacity duration-500"
     >
       <svg 
-      width="1500" height="1000"  viewBox="0 0 1500 1000" aria-hidden="true">
+      className="w-full md:w-5/6 lg:w-3/4 h-auto"
+      viewBox="0 0 1500 1000" aria-hidden="true">
       <g transform="translate(600,320)">
         <path
           id="welcome-path"
