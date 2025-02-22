@@ -5,7 +5,7 @@ import ContactVid from "../components/ContactVid";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen md:p-10 lg:p-[90px] text-white flex flex-col items-center p-6">
+    <div className="min-h-screen md:p-10 lg:p-[70px] text-white flex flex-col items-center p-6">
       <div className="flex items-center gap-1 "> 
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-rust-brown">
           Contact Me

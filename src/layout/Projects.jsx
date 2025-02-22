@@ -5,7 +5,7 @@ import ProjectVid from "../components/ProjectVid";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen md:p-10 lg:p-[90px]">
+    <div className="min-h-screen md:p-10 lg:p-[70px]">
       <div className="flex items-center justify-center mb-10"> 
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-rust-brown font-bold">
           My Projects

@@ -7,7 +7,7 @@ const MyBio = () => {
       <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1">
           <h2 className="flex justify-center text-xl md:text-2xl lg:text-3xl font-semibold text-rust-brown mb-3">
-            Who I Am
+            Who Am I
           </h2>
           <p className="text-sm md:text-lg leading-relaxed text-center md:text-left">
             I am a passionate full-stack web developer specializing in creating
