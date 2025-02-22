@@ -13,6 +13,7 @@ export default {
         "jet-black": "#1A1A19",     // Jet Black
       },
       screens: {
+        xs: "320px",
         sm: "425px",
         md: "768px", 
         lg: "1024px",
