@@ -31,9 +31,9 @@ const Preloader = ({ onComplete }) => {
       className="bg-black fixed inset-0 flex items-center justify-center z-50 preloader transition-opacity duration-500"
     >
       <svg 
-      className="w-full md:w-5/6 lg:w-3/4 h-auto"
+      className="w-full md:w-5/6 lg:w-3/4 h-auto "
       viewBox="0 0 1500 1000" aria-hidden="true">
-      <g transform="translate(600,320)">
+      <g transform="translate(200,30) scale(3.5)">
         <path
           id="welcome-path"
           fill="none"
