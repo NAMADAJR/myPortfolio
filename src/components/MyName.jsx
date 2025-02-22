@@ -6,8 +6,8 @@ const MyName = () => {
   const shortName = " Namada Junior.";
 
   return (
-    <div className="flex flex-wrap justify-center space-x-1 p-5">
-      <span className="text-xl md:text-2xl lg:text-4xl font-bold text-rust-brown">
+    <div className="flex flex-wrap justify-center p-4">
+      <span className="text-xl md:text-xl lg:text-4xl font-bold text-rust-brown">
         {introText}
       </span>
       {shortName.split("").map((letter, index) => (
