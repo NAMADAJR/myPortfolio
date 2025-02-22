@@ -32,7 +32,7 @@ const SkillsCarousel = () => {
 
   return (
     <div className="p-8">
-      <h2 className="text-center text-3xl md:text-4xl font-bold mb-8 text-rust-brown">
+      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8 text-rust-brown">
         Skills & Technologies
       </h2>
       <Slider {...settings}>

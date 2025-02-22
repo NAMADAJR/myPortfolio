@@ -15,7 +15,7 @@ const ContactForm = () => {
       )
       .then(() => {
         alert("Message sent successfully!");
-        reset();  // This will reset the form fields
+        reset();  
       })
       .catch(() => {
         alert("Failed to send the message.");

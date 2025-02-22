@@ -7,7 +7,6 @@ const ContactDetails = () => {
       
       
       <div className="mt-4 flex justify-center gap-6 ">
-        {/* Social Media Icons */}
         <a
           href="https://www.linkedin.com/in/namada-junior-75139a2b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJ8wZIvq6SI2RSaiWrXE9Ug%3D%3D"
           target="_blank"
