@@ -8,11 +8,7 @@ const About = () => {
       <h1 className="flex justify-center text-3xl md:text-4xl lg:text-5xl font-bold text-rust-brown mb-5">
         About Me
       </h1>
-      
-      {/* Bio Section */}
       <MyBio />
-      
-      {/* Skills section */}
       <SkillsCarousel /> 
     </div>
   );

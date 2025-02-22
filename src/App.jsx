@@ -12,7 +12,7 @@ const App = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 3700);
+        const timer = setTimeout(() => setLoading(false), 4000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -24,7 +24,6 @@ const App = () => {
                 </div>
             ) : (
                 <div className="fade-in-content">
-                    {/* Gradient Background Layer */}
                     <div className="gradient-bg"></div>
                     <Navbar />
                     <div id="home" className="min-h-screen bg-transparent">
