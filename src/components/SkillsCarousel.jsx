@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const SkillsCarousel = () => {
-  const skills = ["HTML", "CSS", "JavaScript", "Git and Github", "React", "Tailwind CSS", "Vercel", "Python", "Flask", "SQL", "Render"];
+  const skills = ["HTML", "CSS", "JavaScript", "Git and Github", "React", "Tailwind CSS", "Vercel", "Node JS", "Python", "Flask", "SQL", "Render"];
 
   const settings = {
     dots: false,
